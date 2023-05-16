@@ -1,0 +1,46 @@
+# python code/generation/train.py -c generation/config/L-VAE/L-VAE-CelebA.txt
+
+# Output settings
+exp_name = L-VAE-CelebA
+#output_dir = generation/output
+
+# General settings
+device = cuda:0
+dtype = float32
+seed = 1
+#load_checkpoint = generation/output/L-VAE-CelebA
+
+# General training hyperparameters
+num_epochs = 70
+batch_size = 100
+lr = 5e-4
+weight_decay = 0
+optimizer = RiemannianAdam
+use_lr_scheduler = True
+lr_scheduler_step = 50
+lr_scheduler_gamma = 0.1
+
+# KL Loss hyperparameters
+kl_coeff = 0.09
+
+# General validation/testing hyperparameters
+batch_size_test = 128
+calc_fid_val = True
+batch_size_fid_inception = 512
+
+# General VAE hyperparameters
+model = L-VAE
+enc_layers = 4
+dec_layers = 4
+z_dim = 64
+initial_filters = 64
+
+# Hyperbolic manifold settings
+#learn_K = True
+
+# HVAE
+enc_K = 1.0
+dec_K = 1.0
+
+# Dataset settings
+dataset = CelebA

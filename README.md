@@ -1,6 +1,6 @@
-# Hyperbolic Computer Vision
+# Hyperbolic Computer Vision - ICLR 2024
 
-Official PyTorch implementation of the paper [Hyperbolic Geometry in Computer Vision: A Novel Framework for Convolutional Neural Networks](https://arxiv.org/abs/2303.15919).
+Official PyTorch implementation of the ICLR 2024 paper [Fully Hyperbolic Convolutional Neural Networks for Computer Vision](https://openreview.net/forum?id=ekz1hN5QNh).
 
 By [Ahmad Bdeir](https://scholar.google.com/citations?user=eeeO7kEAAAAJ), [Kristian Schwethelm](https://scholar.google.com/citations?user=Q5X7Kw8AAAAJ), [Niels Landwehr](https://scholar.google.com/citations?user=k6Ei14sAAAAJ)
 
@@ -13,7 +13,7 @@ By [Ahmad Bdeir](https://scholar.google.com/citations?user=eeeO7kEAAAAJ), [Krist
 
 **TL; DR.** In this work, we propose HCNN, a generalization of the convolutional neural network that learns latent feature representations in hyperbolic spaces in every layer, fully leveraging the benefits of hyperbolic geometry. This leads to better image representations and performance.
 
-**Abstract.** Real-world visual data exhibit intrinsic hierarchical structures that can be represented effectively in hyperbolic spaces. Hyperbolic neural networks (HNNs) are a promising approach for learning feature representations in such spaces. However, current HNNs in computer vision rely on Euclidean backbones and only project features to the hyperbolic space in the task heads, limiting their ability to fully leverage the benefits of hyperbolic geometry. To address this, we present HCNN, the first fully hyperbolic convolutional neural network (CNN) designed for computer vision tasks. Based on the Lorentz model, we generalize fundamental components of CNNs and propose novel formulations of the convolutional layer, batch normalization, and multinomial logistic regression. Experimentation on standard vision tasks demonstrates the superiority of our HCNN framework and the Lorentz model in both hybrid and fully hyperbolic settings. Overall, we believe our contributions provide a foundation for developing more powerful HNNs that can better represent complex structures found in image data.
+**Abstract.** Real-world visual data exhibit intrinsic hierarchical structures that can be represented effectively in hyperbolic spaces. Hyperbolic neural networks (HNNs) are a promising approach for learning feature representations in such spaces. However, current HNNs in computer vision rely on Euclidean backbones and only project features to the hyperbolic space in the task heads, limiting their ability to fully leverage the benefits of hyperbolic geometry. To address this, we present HCNN, a fully hyperbolic convolutional neural network (CNN) designed for computer vision tasks. Based on the Lorentz model, we generalize fundamental components of CNNs and propose novel formulations of the convolutional layer, batch normalization, and multinomial logistic regression. Experiments on standard vision tasks demonstrate the promising performance of our HCNN framework in both hybrid and fully hyperbolic settings. Overall, we believe our contributions provide a foundation for developing more powerful HNNs that can better represent complex structures found in image data.
 
 **This repository.** In this repository, we provide implementations of the main experiments from our paper. Additionally, we set up a [library](code/lib) with many network components for HNNs in the Lorentz model. The following components are included:
 
@@ -45,13 +45,12 @@ This code is released under the [MIT License](LICENSE).
 If you find our work useful for your research, please cite our paper as follows:
 
 ```bibtex
-@misc{bdeir2023hyperbolic,
-      title={Hyperbolic Geometry in Computer Vision: A Novel Framework for Convolutional Neural Networks}, 
-      author={Ahmad Bdeir and Kristian Schwethelm and Niels Landwehr},
-      year={2023},
-      eprint={2303.15919},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{Bdeir2024,
+     title={Fully Hyperbolic Convolutional Neural Networks for Computer Vision},
+     author={Ahmad Bdeir and Kristian Schwethelm and Niels Landwehr},
+     booktitle={The Twelfth International Conference on Learning Representations},
+     year={2024},
+     url={https://openreview.net/forum?id=ekz1hN5QNh}
 }
 ```
 
